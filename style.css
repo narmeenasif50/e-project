@@ -1,0 +1,336 @@
+  
+  
+body {
+    background-color: #F4F1EC;
+    font-family: Arial, sans-serif;
+  }
+
+ 
+   .navbar-brand img {
+      height: 40px;
+      width: auto;
+        margin-right: 8px;}
+        
+  .navbar {
+    background-color: #0f0443;
+  }
+
+  .navbar-brand span {
+    color: #F4F1EC;
+  }
+
+  .nav-link {
+    color: #F4F1EC !important;
+    font-weight: 500;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color:rgba(230, 230, 12, 0.809) !important;
+    
+  }
+
+  .dropdown-menu {
+    background-color: #0f0443;
+  }
+
+  .dropdown-item {
+    color: #F4F1EC;
+  }
+
+  .dropdown-item:hover {
+    background-color: white;
+    color: #fff;
+  }
+.btn{
+background-color: #C86B3C;
+          color: #fff;
+          padding: 12px 30px;
+          font-size: 16px;
+          border-radius: 30px;
+          border: none;
+    
+    
+}
+ 
+/* BRAND COLOR */
+:root {
+    --brand-color: #003262;
+}
+
+
+.product-card {
+    background: var(--brand-color);
+    border-radius: 18px;
+    padding: 12px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* CARD BODY */
+.product-card .card-body {
+    background: rgb(4, 2, 57);
+    color: #ffffff;
+    padding: 16px 8px 8px;
+}
+
+/* PRODUCT TITLE */
+.product-card .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color:white;
+}
+
+/* SUB TEXT / PRICE */
+.price-tag {
+    font-size: 16px;
+    font-weight: 600;
+    color: #d6e6ff;
+}
+
+/* ADD TO CART BUTTON */
+.btn-cart {
+    background: #ffffff;
+    color: var(--brand-color);
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-cart:hover {
+    background: #dce9ff;
+    color: var(--brand-color);
+}
+
+/* SECTION HEADINGS */
+.text-blue {
+    color: var(--brand-color) !important;
+}
+
+/* RESPONSIVE IMAGE HEIGHT */
+@media (max-width: 768px) {
+    .product-img {
+        height: 180px;
+    }
+}
+
+    .product-card {
+    background: rgb(3, 3, 60);
+    border-radius: 16px;
+
+    /* TRANSPARENT BORDER */
+    border: 2px solid rgba(0, 50, 98, 0.35);
+
+    /* SOFT BLUE OUTLINE EFFECT */
+    box-shadow: 
+        0 0 0 5px rgba(0, 50, 98, 0.15),
+        0 10px 25px rgba(0, 0, 0, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+/* Card heading */
+.location-heading {
+  color: #0d1b2a; /* Dark Blue */
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Card heading */
+.location-heading {
+  color: #0d1b2a; /* Dark Blue */
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Card Styling */
+.location-card {
+ 
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.5s, box-shadow 0.5s;
+  background: #ffffff;
+  position: relative;
+  border-top: 4px solid #1f77b4; /* colored top border for charm */
+}
+
+.location-card:hover {
+  transform: translateY(-15px) rotate(-0.5deg);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.25);
+}
+
+/* Map wrapper with subtle gradient overlay */
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 ratio */
+  overflow: hidden;
+  border-radius: 25px 25px 0 0;
+}
+
+.map-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+  transition: transform 0.6s;
+}
+
+.location-card:hover .map-wrapper iframe {
+  transform: scale(1.07) rotate(0.5deg);
+}
+
+ .map-wrapper::after {
+  content: "";
+  position: absolute;
+  top:0; left:0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, rgba(13,27,42,0.15), rgba(255,255,255,0));
+  pointer-events: none;
+  border-radius: 25px 25px 0 0;
+} */
+
+/* Branch info */
+.card-body {
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 0 0 25px 25px;
+}
+
+/* Branch title without WebKit gradient */
+.branch-title {
+  color: #0d1b2a; /* Dark blue text */
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Badges with soft shadow */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-transform: uppercase;
+}
+
+/* Services text */
+.branch-services {
+  font-size: 0.95rem;
+  color: #555;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+/* Visit Branch button */
+.visit-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 0.45rem 1rem;
+  background: #0d1b2a;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+  box-shadow: 0 3px 10px rgba(13,27,42,0.3);
+}
+
+.visit-btn:hover {
+  background: #1f77b4;
+  box-shadow: 0 5px 20px rgba(13,27,42,0.4);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .location-heading {
+    font-size: 1.75rem;
+  }
+  .branch-title {
+    font-size: 1.3rem;
+  }
+}
+.added-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    border-radius: 0.375rem;
+}
+
+/* Carousel item center */
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wrapper controls size */
+.logo-box {
+  width: 100%;
+  height: 120px;          /* height control yahan hai */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image fully responsive */
+.logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+}
+/* Modal Designing */
+.cart-modal {
+    border-radius: 14px;
+}
+
+.cart-modal .modal-header {
+    padding: 1.25rem 1.5rem 0.5rem;
+}
+
+.cart-modal .modal-body {
+    padding-top: 0.5rem;
+}
+
+.cart-modal .product-preview img {
+    max-height: 120px;
+    object-fit: contain;
+}
+
+.cart-modal .btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .logo-box {
+    height: 80px;
+  }
+}

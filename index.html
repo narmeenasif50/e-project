@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cosy Air Conditioners</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            max-width: calc(100% - 50px);
+        }
+
+
+        .navbar-brand img {
+            height: 38px;
+            flex-shrink: 0;
+        }
+
+
+        .navbar-brand span {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+
+        @media (max-width: 768px) {
+            .navbar-brand span {
+                font-size: 15px;
+                white-space: normal;
+            }
+        }
+
+        .banner {
+            width: 100%;
+            height: 680px;
+            background-image: url("baner12.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .banner {
+                height: 220px;
+            }
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .text-blue {
+            color: white;
+        }
+
+        /* AC section background */
+        .ac-section {
+            background-color: #03072e;
+            padding: 60px 0;
+        }
+
+
+        .text-blue {
+            color: white;
+        }
+
+
+        .ac-section .card {
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+
+        .ac-section .card-title {
+            color: rgb(3, 3, 44);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+
+        .ac-section .card-text {
+            color: #333;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .ac-type-img.vertical {
+            height: 180px;
+            object-fit: contain;
+            padding: 10px;
+        }
+
+        .text-blue {
+            color: white;
+        }
+
+       
+        .yellow-section {
+            background-color: #F6C453;
+
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 300px;
+            }
+        }
+
+        /* Slide 1 – white text */
+        .slide-1 .carousel-caption {
+            color: #fff;
+        }
+
+        /* Slide 2 – dark text */
+        .slide-2 .carousel-caption {
+            color: #521804;
+        }
+
+        /* Slide 3 – blue text */
+        .slide-3 .carousel-caption {
+            color: black;
+            padding: 3px;
+        }
+
+        /* Slide 1 & 3 button */
+        .btn.btn-main {
+            background-color: #011b1a !important;
+            color: #ffffff !important;
+            border-radius: 30px;
+            padding: 10px 28px;
+            font-weight: 600;
+            border: none;
+        }
+
+        /* Slide 2 button (DIFFERENT) */
+        .btn.btn-alt {
+            background-color: #521804 !important;
+            color: white !important;
+            border: 2px solid#521804 !important;
+            border-radius: 30px;
+            padding: 10px 28px;
+            font-weight: 600;
+        }
+
+        /* Hover */
+        .btn.btn-alt:hover {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+        }
+
+        .product-img {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 10px;
+
+            /* Make image container responsive */
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            /* Keeps square ratio, adjust as needed */
+
+            object-fit: contain;
+            /* ensures entire image fits without cropping */
+            object-position: center;
+            /* centers the image */
+            display: block;
+        }
+
+        .custom-footer {
+            background-color: #02101e;
+            /* Replace with your color */
+            color: #ffffff;
+            /* Text color */
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+
+
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="logo12.png" alt="">
+                <span>Cosy Air Conditioners</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us-footer">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="brandsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Brands
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="brandsDropdown">
+                            <li><a class="dropdown-item" href="#haier">Haier</a></li>
+                            <li><a class="dropdown-item" href="#dawlance">Dawlance</a></li>
+                            <li><a class="dropdown-item" href="#kenwood">Kenwood</a></li>
+                            <li><a class="dropdown-item" href="#Gree">Gree</a></li>
+                            <li><a class="dropdown-item" href="#tcl">TCL</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location">Location</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- CAROUSEL -->
+    <!-- Bootstrap Carousel -->
+    <div id="acCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+        <div class="carousel-inner">
+
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active slide-1">
+                <img src="banner13.jpg" class="d-block w-100" alt="AC 1">
+                <div class="carousel-caption">
+                    <h3>Energy Efficient AC</h3>
+                    <p>Powerful cooling with low electricity</p>
+                    <a href="#products" class="btn btn-main">Shop Now</a>
+
+                </div>
+            </div>
+
+            <!-- SLIDE 2 (DIFFERENT BUTTON) -->
+            <div class="carousel-item slide-2">
+                <img src="baner12.jpg" class="d-block w-100" alt="AC 2">
+                <div class="carousel-caption">
+                    <h3>Smart Cooling Technology</h3>
+                    <p>Comfort for modern homes</p>
+
+                    <a href="#products" class="btn btn-alt">Shop Now</a>
+
+                </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="carousel-item slide-3">
+                <img src="baner11.jpg" class="d-block w-100" alt="AC 3">
+                <div class="carousel-caption">
+                    <h3>Reliable Performance</h3>
+                    <p>Cooling in every season</p>
+                    <a href="#products" class="btn btn-main">Shop Now</a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ARROWS -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#acCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#acCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+
+    <!-- our brands -->
+    <section id="brands" class="container my-5">
+        <h2 class="text-center fw-bold mb-4 text-blue">Our Brands</h2>
+
+        <div id="brandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="4"></button>
+            </div>
+
+            <!-- Carousel Items -->
+            <div class="carousel-inner text-center">
+
+                <div class="carousel-item active">
+                    <div class="logo-box">
+                        <img src="gree-logo-vector.png" alt="Gree Logo">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="logo-box">
+                        <img src="Haier-Logo-Small.png" alt="Haier Logo">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="logo-box">
+                        <img src="tcl logo.png" alt="Tcl Logo">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="logo-box">
+                        <img src="kenwood.jpg" alt="Kenwood Logo">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="logo-box">
+                        <img src="dawnlace.jpg" alt="Dawlance Logo">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- about product -->
+
+    <section id="categories" class="container-fluid my-5 ac-section">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4 p-2 text-white">Air Conditioner Types</h2>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="dawnlance split 1.jpeg" class="card-img-top" alt="Split AC">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Split Air Conditioner</h5>
+                            <p class="card-text">Modern split AC with powerful cooling and energy efficiency.A Split Air
+                                Conditioner (AC) is a cooling system that consists of two separate units: an indoor unit
+                                and an outdoor unit. The indoor unit is installed inside the room and contains the
+                                evaporator coil and fan, which blow cool air into the room. The outdoor unit, placed
+                                outside the house, contains the compressor and condenser, which release the heat
+                                absorbed from indoors.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="non inverter floor kenwood 1.jpeg" class="ac-type-img vertical"
+                            alt="Non-Inverter AC">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Non-Inverter Air Conditioner</h5>
+                            <p class="card-text">Compact and affordable AC suitable for big rooms.A Non-Inverter Air
+                                Conditioner is a traditional type of AC where the compressor operates at a fixed speed.
+                                When the room temperature rises above the set level, the compressor turns on at full
+                                capacity to cool the room, and once the desired temperature is reached, it completely
+                                switches off. This cycle of starting and stopping continues repeatedly, which can lead
+                                to higher electricity consumption compared to inverter ACs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="inverter floor kenwood 1.jpeg" class="ac-type-img vertical" alt="Inverter AC">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Inverter Air Conditioner</h5>
+                            <p class="card-text">Silent operation with maximum power saving.An Inverter Air Conditioner
+                                (AC) is a modern type of AC where the compressor can adjust its speed according to the
+                                room’s temperature. Unlike non-inverter ACs, which turn the compressor fully on or off,
+                                inverter ACs run continuously at variable speeds, using only the energy needed to
+                                maintain the desired temperature. This results in more consistent cooling, quieter
+                                operation, and significant energy savings. Inverter ACs are slightly more expensive
+                                upfront than non-inverter models, but they are cost-effective in the long run due to
+                                lower electricity bills</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Products Heading -->
+    <section id="products" class="py-4" style="background-color:#03072e;">
+        <div class="container text-center">
+            <h2 class="fw-bold text-white mb-2">
+                Our Products
+            </h2>
+            <p class="text-white mb-0">
+                Explore our wide range of air conditioners
+            </p>
+        </div>
+    </section>
+
+
+    <!-- haier -->
+    <section id="haier" class="container my-5">
+        <h3 class="fw-bold mb-4 text-blue">HAIER</h3>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="haier 1.jpg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">
+                            UV T3 PLUS INVERTER
+                        </h5>
+
+                        <span class="price-tag my-2">
+                            PKR 290,000
+                        </span>
+
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="haier 2.jpg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">
+                            PURIFIER T3 PLUS INVERTER
+                        </h5>
+
+                        <span class="price-tag my-2">
+                            PKR 315,000
+                        </span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="haier 3.jpg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">
+                            PURIFIER T3 PLUS INVERTER
+                        </h5>
+
+                        <span class="price-tag my-2">
+                            PKR 290,000
+                        </span>
+
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="haier no 1.jpg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">
+                            MARVEL INVERTER
+                        </h5>
+
+                        <span class="price-tag my-2">
+                            PKR 290,000
+                        </span>
+
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="haier no 2.jpg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">
+                            PEARL PRO INVERTER
+                        </h5>
+
+                        <span class="price-tag my-2">
+                            PKR 380,000
+                        </span>
+
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="haier no 3.jpg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">
+                            PEARL PRO INVERTER
+                        </h5>
+
+                        <span class="price-tag my-2">
+                            PKR 390,000
+                        </span>
+
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- dawlance -->
+    <section id="dawlance" class="container my-5" data-aos="zoom-in-down" data-aos-duration="1000">
+        <h3 class="fw-bold mb-4 text-blue">DAWLANCE</h3>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card product-card h-100 position-relative">
+
+                    <!-- Overlay -->
+                    <div class="added-overlay d-none">
+                        ✔ Added to Cart
+                    </div>
+
+                    <img src="dawnlance split 1.jpeg" class="card-img-top product-img">
+
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">CHROME PRO T3 1.5 TON</h5>
+                        <span class="price-tag my-2">PKR 170,775</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="dawnlance split 2.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">ENERCON X 1 TON</h5>
+                        <span class="price-tag my-2">PKR 121,474</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="dawnlance split 3.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">PURSENSE 1.5 TON</h5>
+                        <span class="price-tag my-2">PKR 187,475</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="dawnlance floor 1.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">GLAMOUR+ 2TON INVERTER FLOOR STANDING AC</h5>
+                        <span class="price-tag my-2">PKR 336,749</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="dawnlance floor 2.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">GLAMOUR INVERTER 45 FS</h5>
+                        <span class="price-tag my-2">PKR 337,750</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="dawnlance floor 3.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">DAWNLANCE GALLANT FS INVERTER 45</h5>
+                        <span class="price-tag my-2">PKR 348,249</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- kenwood -->
+
+    <section id="kenwood" class="container my-5" data-aos="zoom-in-down" data-aos-duration="1000">
+        <h3 class="fw-bold mb-4 text-blue">KENWOOD FLOOR STANDING INVERTER AC</h3>
+
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card product-card h-100">
+                    <img src="inverter floor kenwood 1.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">SUPERIA SMART</h5>
+                        <span class="price-tag my-2">PKR 365,000</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="inverter floor kenwood 2.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">INVERTER PREMIER PLUS</h5>
+                        <span class="price-tag my-2">PKR 365,000</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="inverter floor kenwood 3.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">E-SIGNATURE 2 TON</h5>
+                        <span class="price-tag my-2">PKR 365,000</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Kenwood Non Inverter -->
+    <section id="kenwood" class="container my-5" data-aos="zoom-in-down" data-aos-duration="1000">
+        <h3 class="fw-bold mb-4 text-blue">KENWOOD FLOOR STANDING NON-INVERTER AC</h3>
+
+        <div class="row">
+
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card product-card h-100">
+                    <img src="non inverter floor kenwood 1.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">E-BREEZE 2 TON</h5>
+                        <span class="price-tag my-2">PKR 290,300</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="non inverter floor kenwood 2.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">E-FREEDOM</h5>
+                        <span class="price-tag my-2">PKR 480,000</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="non inverter floor kenwood 3.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">IMPERIAL PLUS</h5>
+                        <span class="price-tag my-2">PKR 356,700</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- KENWOOD INVERTER SPLIT -->
+    <section id="kenwood" class="container my-5" data-aos="zoom-in-down" data-aos-duration="1000">
+        <h3 class="fw-bold mb-4 text-blue">KENWOOD SPLIT INVERTER AC</h3>
+
+        <div class="row">
+
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card product-card h-100">
+                    <img src="inverter kenwood split 1.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">E-SMART PURA</h5>
+                        <span class="price-tag my-2">PKR 178,000</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="inverter kenwood split 2.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">E-COMFORT PRO</h5>
+                        <span class="price-tag my-2">PKR 155,400</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="inverter kenwood split 3.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">E-ECO PLUS</h5>
+                        <span class="price-tag my-2">PKR 151,200</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- KENWOOD NON INVERTER SPLIT -->
+    <section id="kenwood" class="container my-5" data-aos="zoom-in-down" data-aos-duration="1000">
+        <h3 class="fw-bold mb-4 text-blue">KENWOOD SPLIT NON-INVERTER AC</h3>
+
+        <div class="row">
+
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card product-card h-100">
+                    <img src="non inverter kenwood split 1.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">E-NOVA COOL</h5>
+                        <span class="price-tag my-2">PKR 119,900</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="non inverter kenwood split 2.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">E-NOVA PRO</h5>
+                        <span class="price-tag my-2">PKR 120,000</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gree -->
+    <section id="Gree" class="container my-5" data-aos="zoom-in-down" data-aos-duration="1000">
+        <h3 class="fw-bold mb-4 text-blue">GREE</h3>
+
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card product-card h-100">
+                    <img src="gree 1.jpg" class="card-img-top product-img" data-aos-duration="1000">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">GREE INVERTER CABINET</h5>
+                        <span class="price-tag my-2">PKR 503,500</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="gree 2.jpg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">GREE INVERTER GF-24ISH GOLDEN 2.0 TON</h5>
+                        <span class="price-tag my-2">PKR 494,400</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="gree 3.jpg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">GREE INVERTER CABINET 24VTIH 2.0 TON</h5>
+                        <span class="price-tag my-2">PKR 443,999</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="gree 4.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">GREE T3 INVERTER GS-12PITH21 1.0 TON</h5>
+                        <span class="price-tag my-2">148,499</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="gree 5.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">GREE SPLIT AC INVERTER GS-12PITH14S 1 TON TURBO</h5>
+                        <span class="price-tag my-2">PKR 131,999</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="gree 6.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">GREE INVERTER GS-18FITH7 1.5 TON</h5>
+                        <span class="price-tag my-2">PKR 241,OOO</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tcl -->
+    <section id="tcl" class="container my-5">
+        <h3 class="fw-bold mb-4 text-blue">TCL</h3>
+
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="tcl 1.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">TCL CABINET INVERTER TAC 24T3 FH 2.0 TON</h5>
+                        <span class="price-tag my-2">PKR 279,999</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="tcl 2.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">TCL INVERTER 24T5 SMART UV</h5>
+                        <span class="price-tag my-2">PKR 209,999</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="tcl 4.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">TCL INVERTER 18T3B-2 WHITE 1.5 TON</h5>
+                        <span class="price-tag my-2">PKR 153,999</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="tcl 3.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">TCL SPLIT AC INVERTER TAC 24HEB 2 TON</h5>
+                        <span class="price-tag my-2">PKR 185,999</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="tcl 5.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">TCL INVERTER SPLIT 12HES-2 SILVER 1.0 TON</h5>
+                        <span class="price-tag my-2">PKR 104,999</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="card product-card h-100">
+                    <img src="tcl 6.jpeg" class="card-img-top product-img">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-semibold">TCL CFRESH INVERTER AC-FLOOR STANDING 2.0 TON</h5>
+                        <span class="price-tag my-2">PKR 348,249</span>
+                        <button class="btn btn-primary btn-cart mt-auto" onclick="addToCart(this)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- comparision selection -->
+
+    <body class="p-4">
+        <section id="compare" class="py-3" style="background-color:#03072e;">
+            <div class="container text-center">
+                <h2 class="fw-bold text-white mb-2">
+                    Air Conditioner Comparison
+                </h2>
+
+            </div>
+        </section>
+        <br><br>
+        <!-- Product Selection -->
+        <div class="row select-container ">
+            <div class="col-md-3" data-aos="fade-right">
+                <select id="product1" class="form-select">
+                    <option value="">Select AC 1</option>
+                </select>
+            </div>
+            <div class="col-md-3" data-aos="fade-right">
+                <select id="product2" class="form-select">
+                    <option value="">Select AC 2</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button id="compareBtn" class="btn btn-primary btn-compare">Compare</button>
+                <br><br>
+            </div>
+        </div>
+        </div>
+        </section>
+
+
+        <!-- Comparison Table -->
+        <div id="comparisonTable" class="table-responsive" style="background-color: #03072e;" data-aos="fade-right">
+        </div>
+        </div>
+
+        <!-- jQuery and Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            // AC data for 10 products
+            const products = {
+                AC1: { Name: "UV T3 PLUS INVERTER", Price: "PKR 290,000", "Cooling Capacity": "2 Ton", "Energy Rating": "5 Star", "Noise Level": "26 dB(A)", Weight: "35 kg" },
+                AC2: { Name: "PURIFIER T3 PLUS INVERTER", Price: "PKR 315,0000", "Cooling Capacity": "2 Ton", "Energy Rating": "3 Star", "Noise Level": "26 dB(A)", Weight: "28 kg" },
+                AC3: { Name: "CHROME PRO T3 1.5 TON", Price: "PKR 170,775", "Cooling Capacity": "1.5 Ton", "Energy Rating": "4 Star", "Noise Level": "48 dB(A)", Weight: "36 kg" },
+                AC4: { Name: "GLAMOUR+ 2TON INVERTER FLOOR STANDING AC", Price: "PKR 336,749", "Cooling Capacity": "2 Ton", "Energy Rating": "3 Star", "Noise Level": "39 dB", Weight: "32 kg" },
+                AC5: { Name: "INVERTER PREMIER PLUS", Price: "PKR 365,000", "Cooling Capacity": "1.5 Ton", "Energy Rating": "5 Star", "Noise Level": "37 dB", Weight: "34 kg" },
+                AC6: { Name: "E-BREEZE 2 TON", Price: "PKR 290,300", "Cooling Capacity": "2 Ton", "Energy Rating": "3.5 Star", "Noise Level": "45–55 dB(A)", Weight: "34 kg" },
+                AC8: { Name: "E-NOVA COOL", Price: "PKR 119,900", "Cooling Capacity": "2 Ton", "Energy Rating": "3 Star", "Noise Level": "43 dB", Weight: "35 kg" },
+                AC9: { Name: "TCL SPLIT AC INVERTER TAC 24HEB ", Price: "PKR 185,999", "Cooling Capacity": "2 Ton", "Energy Rating": "5 Star", "Noise Level": "39 dB", Weight: "35 kg" },
+                AC10: { Name: "GREE SPLIT AC INVERTER GS-12PITH14S 1 TON TURBO", Price: "PKR 131,999", "Cooling Capacity": "1 Ton", "Energy Rating": "4 Star", "Noise Level": "38 dB", Weight: "36 kg" }
+            };
+
+            // Populate dropdowns dynamically
+            $.each(products, function (key, value) {
+                $('#product1, #product2').append(`<option value="${key}">${value.Name}</option>`);
+            });
+
+            $('#compareBtn').click(function () {
+                const p1 = $('#product1').val();
+                const p2 = $('#product2').val();
+
+                if (!p1 || !p2 || p1 === p2) {
+                    alert("Please select two different air conditioners to compare.");
+                    return;
+                }
+
+                const table = $('<table class="table table-bordered table-striped"></table>');
+                const thead = $(`<thead class="table-dark"><tr>
+                        <th>Feature</th>
+                        <th>${products[p1].Name}</th>
+                        <th>${products[p2].Name}</th>
+                      </tr></thead>`);
+                table.append(thead);
+
+                const tbody = $('<tbody></tbody>');
+
+                // Compare all attributes except Name
+                const features = ["Price", "Cooling Capacity", "Energy Rating", "Noise Level", "Weight"];
+                features.forEach(feature => {
+                    const val1 = products[p1][feature];
+                    const val2 = products[p2][feature];
+                    const row = $('<tr></tr>');
+                    row.append(`<td>${feature}</td>`);
+
+                    // Highlight differences
+                    if (val1 !== val2) {
+                        row.append(`<td class="diff">${val1}</td>`);
+                        row.append(`<td class="diff">${val2}</td>`);
+                    } else {
+                        row.append(`<td>${val1}</td>`);
+                        row.append(`<td>${val2}</td>`);
+                    }
+                    tbody.append(row);
+                });
+
+                table.append(tbody);
+                $('#comparisonTable').html(table);
+            });
+        </script>
+        <br><br>
+        <!-- location -->
+        <section id="location" class="py-3" style="background-color:#03072e;">
+            <div class="container text-center">
+                <h2 class="fw-bold text-white mb-2">
+                    Our AC Brand Location
+                </h2>
+
+            </div>
+        </section>
+        <br><br>
+        <div class="row g-4">
+            <!-- karachi -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card location-card">
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3044.1364798751!2d67.06723467954147!3d24.860134711152128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e9f214b03d3%3A0x5c69e7182cc8e8fe!2sShahrah-e-Faisal%20Block%206%20PECHS%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1768208684743!5m2!1sen!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Sindh</span>
+                        <h5 class="fw-bold branch-title">Karachi Branch</h5>
+                        <p><strong>Area:</strong> Shahrah-e-Faisal</p>
+                        <p><strong>Near:</strong> Nursery, PECHS Block-6</p>
+                        <p class="branch-services">Sales • Installation • Service</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Lahore -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card location-card">
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.2648104632694!2d74.34945707476903!3d31.516886074215527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190456cec001c7%3A0x9d52a7093c378195!2sMM%20Alam%20Rd%2C%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1768209169054!5m2!1sen!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Punjab</span>
+                        <h5 class="fw-bold branch-title">Lahore Branch</h5>
+                        <p><strong>Area:</strong> MM Alam Road</p>
+                        <p><strong>Near:</strong> Liberty Market, Gulberg-III</p>
+                        <p class="branch-services">Inverter • Split • Floor ACs</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Islamabad -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card location-card">
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.595357016662!2d73.06895887820212!3d33.71941800439891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf9bc116caa3%3A0x337cd6075e732737!2sBlue%20Area%2C%20Islamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1768209396855!5m2!1sen!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <span class="badge bg-warning mb-2">Capital</span>
+                        <h5 class="fw-bold branch-title">Islamabad Branch</h5>
+                        <p><strong>Area:</strong> Blue Area</p>
+                        <p><strong>Near:</strong> Jinnah Avenue</p>
+                        <p class="branch-services">Corporate & Residential</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hyderabad -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card location-card">
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.9046663825825!2d68.35784277449476!3d25.37451137759721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c70841d08ca0b%3A0x85a1ada8f0d82d53!2sAuto%20Bahn%20Rd%2C%20Hyderabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1768209512330!5m2!1sen!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">Sindh</span>
+                        <h5 class="fw-bold branch-title">Hyderabad Branch</h5>
+                        <p><strong>Area:</strong> Auto Bhan Road</p>
+                        <p><strong>Near:</strong> Latifabad Unit-7</p>
+                        <p class="branch-services">Affordable AC Solutions</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sukkur -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card location-card">
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.70065227384!2d68.84320797459195!3d27.695645476189252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3935d4f81f49e257%3A0xb0344afccb7ac7d9!2sMilitary%20Rd%2C%20Sukkur%2C%20Pakistan!5e0!3m2!1sen!2s!4v1768209689121!5m2!1sen!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">Upper Sindh</span>
+                        <h5 class="fw-bold branch-title">Sukkur Branch</h5>
+                        <p><strong>Area:</strong> Military Road</p>
+                        <p><strong>Near:</strong> Clock Tower</p>
+                        <p class="branch-services">Fast Installation Support</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multan -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card location-card">
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.34272686435!2d71.47570047470695!3d30.227301574831994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b3388679df4d7%3A0xf41d7f7cb68d25fe!2sBosan%20Rd%2C%20Multan%2C%20Pakistan!5e0!3m2!1sen!2s!4v1768209763408!5m2!1sen!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">South Punjab</span>
+                        <h5 class="fw-bold branch-title">Multan Branch</h5>
+                        <p><strong>Area:</strong> Bosan Road</p>
+                        <p><strong>Near:</strong> Chowk Kumharanwala</p>
+                        <p class="branch-services">Residential & Commercial ACs</p>
+
+                    </div>
+                </div>
+            </div>
+            </section>
+
+
+            <!-- contact -->
+            <!-- Responsive Bootstrap Contact Form -->
+            <section id="contact" class="py-5" style="background: #f0f4f8;">
+                <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10">
+
+                            <!-- Form Card -->
+                            <div class="card shadow-lg border-0 rounded-4 p-4 p-md-5"
+                                style="background: linear-gradient(135deg, #ffffff, #e0f7fa);">
+                                <h2 class="fw-bold text-center mb-3" style="color:#02172e;">Get in Touch</h2>
+                                <p class="text-center text-muted mb-4">We'd love to hear from you! Fill out the form
+                                    below.
+                                </p>
+
+                                <form onsubmit="showMessage(event)">
+                                    >
+                                    <div class="mb-3 form-floating">
+                                        <input type="text" class="form-control rounded-3" id="name"
+                                            placeholder="Your Name" required>
+                                        <label for="name">Full Name</label>
+                                    </div>
+
+                                    <div class="mb-3 form-floating">
+                                        <input type="email" class="form-control rounded-3" id="email"
+                                            placeholder="Your Email" required>
+                                        <label for="email">Email Address</label>
+                                    </div>
+
+                                    <div class="mb-3 form-floating">
+                                        <input type="tel" class="form-control rounded-3" id="phone"
+                                            placeholder="Your Phone">
+                                        <label for="phone">Phone Number</label>
+                                    </div>
+
+                                    <div class="mb-3 form-floating">
+                                        <textarea class="form-control rounded-3" placeholder="Leave a message here"
+                                            id="message" style="height: 140px;"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-gradient btn-lg rounded-3 text-white"
+                                            style="background: linear-gradient(90deg, #02162c, #022832); border:none; box-shadow: 0 4px 15px rgba(0,123,255,0.4);">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </form>
+                                <div id="successMsg" class="text-center mt-4 fw-semibold"
+                                    style="display:none; color:green;">
+                                    Your message has been sent successfully!
+                                </div>
+
+                                <div class="text-center mt-4 text-muted">
+                                    <small>Or reach us at <a href="mailto:info@example.com"
+                                            style="text-decoration:none; color:#041b34;">info@example.com</a></small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Footer -->
+            <footer class="text-white pt-5 pb-3 custom-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- About Section -->
+                        <div class="col-lg-4 col-md-6 mb-4" id="about-us-footer">
+                            <h5 class="fw-bold mb-3">About Us</h5>
+                            <p>
+                                Cosy Air Conditioners provides top-quality ACs from Haier, Dawnlance, and Kenwood.
+                                Explore our products and find the perfect cooling solution for your home or office.
+                            </p>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <h5 class="fw-bold mb-3">Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#haier" class="text-white text-decoration-none">Haier ACs</a></li>
+                                <li><a href="#dawlance" class="text-white text-decoration-none">Dawlance ACs</a></li>
+                                <li><a href="#kenwood" class="text-white text-decoration-none">Kenwood ACs</a></li>
+                                <li><a href="#Gree" class="text-white text-decoration-none">Gree ACs</a></li>
+                                <li><a href="#tcl" class="text-white text-decoration-none">Tcl ACs</a></li>
+                                <li><a href="#contact" class="text-white text-decoration-none">Contact Us</a></li>
+                                <li><a href="#compare" class="text-white text-decoration-none">Compare Products</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="col-lg-4 col-md-12 mb-4">
+                            <h5 class="fw-bold mb-3">Contact</h5>
+                            <p><i class="bi bi-telephone-fill me-2"></i> +92 300 1234567</p>
+                            <p><i class="bi bi-envelope-fill me-2"></i> info@cosyac.com</p>
+                            <p><i class="bi bi-geo-alt-fill me-2"></i> Karachi, Pakistan</p>
+
+                            <!-- Social Icons -->
+                            <div class="mt-3">
+                                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr class="bg-light">
+                    <p class="text-center mb-0">&copy; 2026 Cosy Air Conditioners. All Rights Reserved.</p>
+                </div>
+            </footer>
+
+            <!-- modal -->
+            <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content cart-modal shadow-lg">
+
+                        <!-- Header -->
+                        <div class="modal-header border-0 pb-0">
+                            <h5 class="modal-title fw-semibold" id="cartModalTitle">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Added to Cart
+                            </h5>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="modal-body text-center px-4">
+                            <div class="product-preview mb-3">
+                                <img src="haier 3.jpg" alt="Product" class="img-fluid rounded">
+                            </div>
+
+                            <h6 id="modalProductName" class="fw-semibold mb-1"></h6>
+                            <p id="modalProductPrice" class="text-success fw-bold fs-5 mb-0"></p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="modal-footer border-0 d-flex gap-2 px-4 pb-4">
+
+                            <button class="btn btn-outline-secondary w-100" data-bs-toggle="modal"
+                                data-bs-target="#thankYouModal">
+                                Continue Shopping
+                            </button>
+
+
+                            <button class="btn btn-primary w-100 " data-bs-dismiss="modal">
+                                Cancel
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="thankYouModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content shadow-lg rounded-4 text-center">
+
+                        <!-- Body -->
+                        <div class="modal-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-check-circle-fill text-success fs-1"></i>
+                            </div>
+
+                            <h5 class="fw-semibold mb-2">Thank You!</h5>
+                            <p class="text-muted mb-4">
+                                Thank you for shopping with us.
+                            </p>
+
+                            <button class="btn btn-primary w-100" data-bs-dismiss="modal">
+                                Continue
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                const thankYouModalEl = document.getElementById('thankYouModal');
+
+                thankYouModalEl.addEventListener('shown.bs.modal', function () {
+                    setTimeout(() => {
+                        const modalInstance = bootstrap.Modal.getInstance(thankYouModalEl);
+                        modalInstance.hide();
+                    }, 5000); // 5 seconds
+                });
+            </script>
+
+
+
+            <!-- Bootstrap Icons -->
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+            <script>
+                function addToCart(button) {
+
+                    // card se data uthana
+                    const card = button.closest('.card');
+                    const productName = card.querySelector('.card-title').innerText;
+                    const productPrice = card.querySelector('.price-tag').innerText;
+
+                    // modal mein data set karna
+                    document.getElementById('modalProductName').innerText = productName;
+                    document.getElementById('modalProductPrice').innerText = productPrice;
+
+                    // modal show karna
+                    const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+                    cartModal.show();
+                }
+            </script>
+
+
+            <script>
+                function showMessage(event) {
+                    event.preventDefault();
+                    alert("Your message has been sent successfully!");
+                    event.target.reset();
+                }
+            </script>
+
+
+
+
+            <script>
+                AOS.init();
+            </script>
+
+    </body>
+
+</html>
